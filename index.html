@@ -3,13 +3,51 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Video with Chapters</title>
+  <title>Video with Visible Chapters</title>
 
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
+    :root { color-scheme: light; }
+
     body { margin: 0; background: #fff; }
-    .wrap { padding: 16px; max-width: 1100px; margin: 0 auto; }
+    .wrap { padding: 16px; max-width: 1100px; margin: 0 auto; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
     video { width: 100%; height: auto; }
+
+    .chapters {
+      margin-top: 14px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .chapter-btn {
+      width: 100%;
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+      line-height: 1.25;
+    }
+
+    .chapter-btn:hover { background: #f7f7f7; }
+    .chapter-btn:active { transform: translateY(1px); }
+
+    .chapter-time {
+      display: inline-block;
+      min-width: 64px;
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .chapter-label { font-weight: 500; }
+
+    .chapter-btn.is-active {
+      border-color: #999;
+      background: #f2f2f2;
+    }
   </style>
 </head>
 <body>
@@ -18,11 +56,66 @@
       <source src="./video.mp4" type="video/mp4" />
       <track kind="chapters" label="Chapters" srclang="en" src="./chapters.vtt" default />
     </video>
+
+    <div id="chapterList" class="chapters" aria-label="Chapters"></div>
   </div>
 
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
   <script>
-    new Plyr('#player');
+    const player = new Plyr('#player', {
+      controls: [
+        'play-large','play','progress','current-time','duration',
+        'mute','volume','settings','fullscreen'
+      ]
+    });
+
+    // Your chapters (seconds) + labels
+    const chapters = [
+      { t: 0,  time: '00:00', label: 'Intro' },
+      { t: 12, time: '00:12', label: 'Course overview' },
+      { t: 30, time: '00:30', label: 'Who is this course for?' },
+      { t: 40, time: '00:40', label: 'What will this course cover?' },
+      { t: 83, time: '01:23', label: 'What do you need to start?' },
+    ];
+
+    const list = document.getElementById('chapterList');
+
+    // Render buttons
+    list.innerHTML = chapters.map((c, i) => `
+      <button class="chapter-btn" type="button" data-t="${c.t}" data-i="${i}">
+        <span class="chapter-time">${c.time}</span>
+        <span class="chapter-label">${c.label}</span>
+      </button>
+    `).join('');
+
+    // Click -> jump + play
+    list.addEventListener('click', (e) => {
+      const btn = e.target.closest('.chapter-btn');
+      if (!btn) return;
+
+      const t = Number(btn.dataset.t);
+      player.currentTime = t;
+      player.play();
+
+      setActive(Number(btn.dataset.i));
+    });
+
+    // Highlight active chapter based on current time
+    function setActive(activeIndex) {
+      document.querySelectorAll('.chapter-btn').forEach((b) => b.classList.remove('is-active'));
+      const active = document.querySelector(`.chapter-btn[data-i="${activeIndex}"]`);
+      if (active) active.classList.add('is-active');
+    }
+
+    // Update active chapter while playing
+    player.on('timeupdate', () => {
+      const ct = player.currentTime;
+      let idx = 0;
+      for (let i = 0; i < chapters.length; i++) {
+        if (ct >= chapters[i].t) idx = i;
+      }
+      setActive(idx);
+    });
   </script>
 </body>
 </html>
