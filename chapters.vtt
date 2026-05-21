@@ -1,16 +1,34 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:12.000
-Intro
+00:00:00.000 --> 00:00:24.000
+Introduction
 
-00:00:12.000 --> 00:00:30.000
-Course overview
+00:00:24.000 --> 00:01:04.000
+Getting Started: Accessing the Design Kit
 
-00:00:30.000 --> 00:00:40.000
-Who is this course for?
+00:01:04.000 --> 00:02:21.000
+Getting Started: A Tour of the Design Kit
 
-00:00:40.000 --> 00:01:23.000
-What will this course cover?
+00:02:21.000 --> 00:03:09.000
+Designing a Website: Presets
 
-00:01:23.000 --> 00:02:20.000
-What do you need to start?
+00:03:09.000 --> 00:04:48.000
+Designing a Website: File Structure
+
+00:04:48.000 --> 00:06:22.000
+Designing a Website: Adding Components
+
+00:06:22.000 --> 00:07:40.000
+Using Components: Component Overview
+
+00:07:40.000 --> 00:08:40.000
+Using Components: Variants and Properties
+
+00:08:40.000 --> 00:09:56.000
+Using Components: Color, Styles, and Effects
+
+00:09:56.000 --> 00:12:23.000
+Using Components: Images
+
+00:12:23.000 --> 00:12:24.000
+Using Components: Columns
