@@ -54,7 +54,7 @@
   <div class="wrap">
     <video id="player" controls playsinline>
       <source src="./video.mp4" type="video/mp4" />
-      <track kind="chapters" label="Chapters" srclang="en" src="./chapters.vtt" default />
+      <track kind="captions" label="English" srclang="en" src="./captions.vtt" default />
       <track kind="chapters" label="Chapters" srclang="en" src="./chapters.vtt" default />
     </video>
 
@@ -64,6 +64,11 @@
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
   <script>
     const player = new Plyr('#player', {
+      captions: {
+        active: false,
+        language: 'en',
+        update: true
+  },
       controls: [
         'play-large','play','progress','current-time','duration',
         'mute','volume','captions','settings','fullscreen'
