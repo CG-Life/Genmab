@@ -72,7 +72,25 @@
       controls: [
         'play-large','play','progress','current-time','duration',
         'mute','volume','captions','settings','fullscreen'
-      ]
+      ],
+      markers: {
+        enabled: true,
+
+        points: [
+          { time: 0, label: 'Introduction' },
+          { time: 24, label: 'Accessing the Design Kit' },
+          { time: 64, label: 'Tour of the Design Kit' },
+          { time: 141, label: 'Presets' },
+          { time: 189, label: 'File Structure' },
+          { time: 288, label: 'Adding Components' },
+          { time: 382, label: 'Component Overview' },
+          { time: 460, label: 'Variants and Properties' },
+          { time: 520, label: 'Color, Styles, Effects' },
+          { time: 596, label: 'Images' },
+          { time: 743, label: 'Columns' }
+    ]
+  }
+});
     });
 
     // Your chapters (seconds) + labels
