@@ -1,0 +1,658 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.666
+Welcome to the Genmab Website Design System Designer tutorial.
+
+00:00:03.666 --> 00:00:08.033
+This video is for designers creating website experiences for Genmab.
+
+00:00:08.033 --> 00:00:10.766
+Use of the design system is a required part of the website
+
+00:00:10.766 --> 00:00:13.366
+design process for all agency partners.
+
+00:00:13.366 --> 00:00:16.000
+In this video, we'll walk through how to access the design
+
+00:00:16.000 --> 00:00:19.200
+system, understand and leverage its various features,
+
+00:00:19.200 --> 00:00:22.433
+how to move from design to development, plus where to go for support.
+
+00:00:26.400 --> 00:00:29.100
+To get the latest version of the website design kit.
+
+00:00:29.100 --> 00:00:32.033
+Go to helix and navigate to Channel Guidance,
+
+00:00:32.033 --> 00:00:34.433
+then websites.
+
+00:00:34.433 --> 00:00:37.000
+Website design system,
+
+00:00:37.000 --> 00:00:38.700
+website design kit
+
+00:00:38.700 --> 00:00:41.300
+and finally design Kit.
+
+00:00:41.300 --> 00:00:44.633
+Click the button to open the file in view only mode.
+
+00:00:44.633 --> 00:00:49.566
+From there, use the dropdown menu to duplicate it to your drafts.
+
+00:00:49.566 --> 00:00:52.566
+This creates a new file with all permissions removed
+
+00:00:52.566 --> 00:00:57.000
+so you can edit, rename, save, and move it wherever you like.
+
+00:00:57.000 --> 00:01:00.400
+Finally, to make sure you have the latest version, click this button.
+
+00:01:00.400 --> 00:01:03.700
+It will link to the current file or newer version if one is available.
+
+00:01:07.166 --> 00:01:08.633
+Now that you have created your own
+
+00:01:08.633 --> 00:01:12.966
+copy of the design kit file, let's take a look at what's inside.
+
+00:01:12.966 --> 00:01:16.233
+Starting with the left sidebar, the Pages and Layers panel,
+
+00:01:16.233 --> 00:01:18.100
+we have the Getting Started page,
+
+00:01:18.100 --> 00:01:20.966
+which contains an overview of the content along with direct
+
+00:01:20.966 --> 00:01:24.100
+links to specific pages within the kit.
+
+00:01:24.100 --> 00:01:27.733
+Next is the foundations page covering design, kit, essentials, color
+
+00:01:27.733 --> 00:01:32.100
+and theme modes, typography and columns.
+
+00:01:32.100 --> 00:01:35.633
+The presets page contains desktop, tablet and mobile page frames
+
+00:01:35.633 --> 00:01:40.500
+based on website type, with navigation and theme modes already applied.
+
+00:01:40.500 --> 00:01:43.366
+The component overview page provides an at a glance listing
+
+00:01:43.366 --> 00:01:48.233
+of all components, with links to the component reference pages.
+
+00:01:48.233 --> 00:01:50.833
+The next set of pages cover each component in detail,
+
+00:01:50.833 --> 00:01:54.933
+including properties and variants, as well as color and font options.
+
+00:01:54.933 --> 00:02:00.066
+And finally, the changelog page lists version and update details.
+
+00:02:00.066 --> 00:02:03.666
+Moving over to the right sidebar, the Properties and Inspector panel
+
+00:02:03.666 --> 00:02:08.500
+you will find available text styles, effects and layout guides.
+
+00:02:08.500 --> 00:02:10.666
+Theme modes included in this version of the design
+
+00:02:10.666 --> 00:02:14.166
+kit can be viewed in the variables panel.
+
+00:02:14.166 --> 00:02:17.100
+Keep in mind that the right sidebar is contextual
+
+00:02:17.100 --> 00:02:20.100
+and will change depending on what is selected on the canvas.
+
+00:02:26.466 --> 00:02:27.600
+The first step in creating
+
+00:02:27.600 --> 00:02:31.333
+a website is choosing a preset based on website type.
+
+00:02:31.333 --> 00:02:34.033
+There are three preset types. Brand.
+
+00:02:34.033 --> 00:02:38.100
+Brand with indication selector and Genmab Corporate.
+
+00:02:38.100 --> 00:02:43.000
+This version of the design kit also includes a MyNavCare preset.
+
+00:02:43.000 --> 00:02:45.133
+Each preset includes desktop,
+
+00:02:45.133 --> 00:02:47.800
+tablet, and mobile page frames with an applied
+
+00:02:47.800 --> 00:02:51.600
+theme mode along with header, footer, and navigation flows.
+
+00:02:51.600 --> 00:02:54.400
+There are two sub navigation options to choose from.
+
+00:02:54.400 --> 00:02:57.633
+A full width menu and dropdown menu.
+
+00:02:57.633 --> 00:02:59.933
+The page frames also have Auto Layout applied
+
+00:02:59.933 --> 00:03:03.333
+to support drag and drop page creation.
+
+00:03:03.333 --> 00:03:06.333
+For this tutorial, we will use the BrandMab preset.
+
+00:03:11.000 --> 00:03:12.833
+Once you have selected a preset, it's
+
+00:03:12.833 --> 00:03:14.566
+time to think about file structure
+
+00:03:14.566 --> 00:03:17.500
+and where the website design will live.
+
+00:03:17.500 --> 00:03:20.133
+As you become familiar with the kit and components,
+
+00:03:20.133 --> 00:03:22.800
+you'll find the workflow that works best for you.
+
+00:03:22.800 --> 00:03:23.700
+In this tutorial,
+
+00:03:23.700 --> 00:03:25.133
+we'll share some preferred methods
+
+00:03:25.133 --> 00:03:27.700
+for structuring the file and adding components.
+
+00:03:27.700 --> 00:03:28.433
+Keep in mind,
+
+00:03:28.433 --> 00:03:29.666
+unless the kit is published
+
+00:03:29.666 --> 00:03:32.133
+within your organization as a design library,
+
+00:03:32.133 --> 00:03:33.866
+the website design will need to remain
+
+00:03:33.866 --> 00:03:36.900
+in this file to access components locally.
+
+00:03:36.900 --> 00:03:38.933
+Let's begin by renaming the design kit.
+
+00:03:42.933 --> 00:03:43.900
+A clean version of
+
+00:03:43.900 --> 00:03:46.900
+the original design kit can be used for the next project,
+
+00:03:46.900 --> 00:03:49.900
+or related deliverables can be added to this file.
+
+00:03:50.700 --> 00:03:53.200
+Now let's copy and paste the preset to a new page
+
+00:03:53.200 --> 00:03:54.666
+and give it a name.
+
+00:04:03.600 --> 00:04:05.066
+Move the pages from the preset
+
+00:04:05.066 --> 00:04:08.066
+frame onto the canvas and rename.
+
+00:04:39.366 --> 00:04:40.400
+For the navigation.
+
+00:04:40.400 --> 00:04:43.400
+Create a separate frame showing all expanded views.
+
+00:04:44.333 --> 00:04:47.333
+Now we're ready to start adding components.
+
+00:04:51.733 --> 00:04:52.733
+Adding components to
+
+00:04:52.733 --> 00:04:55.866
+the page is simple and can be done in a couple of ways.
+
+00:04:55.866 --> 00:04:59.100
+Starting with the desktop page, let's add a hero.
+
+00:04:59.100 --> 00:05:02.700
+We can drag the component directly from the assets panel onto the page.
+
+00:05:03.000 --> 00:05:04.100
+Positioning the cursor
+
+00:05:04.100 --> 00:05:07.100
+where we would like it to appear in the stacking order.
+
+00:05:08.400 --> 00:05:09.966
+Or we can select a component
+
+00:05:09.966 --> 00:05:13.133
+already in the page frame and use the swap instance function.
+
+00:05:20.000 --> 00:05:22.800
+Duplicating components within the auto layout frame
+
+00:05:22.800 --> 00:05:26.400
+and using swap instance is one of the fastest ways to add components.
+
+00:05:26.400 --> 00:05:29.400
+while designing the page.
+
+00:05:31.833 --> 00:05:34.133
+If we configure the desktop component first
+
+00:05:34.133 --> 00:05:37.200
+with the desired variant properties and content,
+
+00:05:37.200 --> 00:05:39.333
+we can then use copy and paste to replace
+
+00:05:39.333 --> 00:05:41.533
+across the tablet and mobile pages.
+
+00:05:41.533 --> 00:05:45.500
+Update the device variants and only configure the component once.
+
+00:05:45.500 --> 00:05:48.500
+Reducing errors and speeding up development.
+
+00:06:04.800 --> 00:06:06.633
+Finally, it's worth mentioning that
+
+00:06:06.633 --> 00:06:07.833
+because all components
+
+00:06:07.833 --> 00:06:10.900
+are designed at desktop, tablet, and mobile widths,
+
+00:06:10.900 --> 00:06:13.800
+keeping the page frame auto layout set to top center
+
+00:06:13.800 --> 00:06:17.833
+with horizontal and vertical hug enabled is recommended.
+
+00:06:17.833 --> 00:06:20.700
+Now that we've added components to the page, let's take a closer
+
+00:06:20.700 --> 00:06:22.000
+look at how they work.
+
+00:06:27.700 --> 00:06:28.800
+The component library
+
+00:06:28.800 --> 00:06:32.033
+consists of two main types based components—
+
+00:06:32.033 --> 00:06:35.566
+Single reusable elements like buttons, containers, and text,
+
+00:06:35.566 --> 00:06:36.833
+and component groups
+
+00:06:36.833 --> 00:06:42.300
+or patterns such as navigation bars, hero sections, and card layouts.
+
+00:06:42.300 --> 00:06:43.366
+Components are listed
+
+00:06:43.366 --> 00:06:45.066
+alphabetically in the Assets Panel,
+
+00:06:45.066 --> 00:06:47.733
+and can be viewed in either grid or list view.
+
+00:06:48.866 --> 00:06:51.600
+Make sure show subfolders is selected.
+
+00:06:51.600 --> 00:06:52.933
+This keeps component atoms
+
+00:06:52.933 --> 00:06:55.933
+grouped inside folders and out of the way for easier browsing.
+
+00:06:57.300 --> 00:07:00.133
+When designing a website, we should always use instances
+
+00:07:00.133 --> 00:07:01.400
+of these pre-built patterns
+
+00:07:01.400 --> 00:07:02.233
+and configure them
+
+00:07:02.233 --> 00:07:05.266
+using the available variants, properties and color options.
+
+00:07:05.966 --> 00:07:08.966
+Detaching components is not recommended or supported,
+
+00:07:08.966 --> 00:07:11.966
+except in a few cases covered later in the tutorial.
+
+00:07:13.033 --> 00:07:15.366
+Keeping components connected is important
+
+00:07:15.366 --> 00:07:18.366
+because detached instances no longer receive updates
+
+00:07:18.366 --> 00:07:21.633
+or have access to component properties and variants.
+
+00:07:21.633 --> 00:07:23.233
+Connected components help maintain
+
+00:07:23.233 --> 00:07:26.233
+consistency, reduce errors, and speeds up development.
+
+00:07:27.266 --> 00:07:29.466
+Finally, while this design system does
+
+00:07:29.466 --> 00:07:31.300
+support atomic design through custom
+
+00:07:31.300 --> 00:07:34.566
+layouts built with base components, it should be used sparingly
+
+00:07:34.800 --> 00:07:37.666
+since it requires more time for both design and development.
+
+00:07:42.233 --> 00:07:45.000
+Variants and properties make components more flexible
+
+00:07:45.000 --> 00:07:48.900
+and reusable while maintaining consistency across the design system.
+
+00:07:48.900 --> 00:07:50.633
+An easy way to explore component
+
+00:07:50.633 --> 00:07:53.800
+variants and properties is in the details panel.
+
+00:07:53.800 --> 00:07:56.433
+Let's take a look at the hero component.
+
+00:07:56.433 --> 00:07:58.800
+Variants are different versions of a component grouped
+
+00:07:58.800 --> 00:08:00.600
+within the same component set.
+
+00:08:00.600 --> 00:08:04.333
+They allow you to switch between options such as device type, style,
+
+00:08:04.333 --> 00:08:07.333
+image position, and more without creating separate components.
+
+00:08:08.800 --> 00:08:12.000
+Properties are customizable settings within a component that allow you
+
+00:08:12.000 --> 00:08:12.933
+to change content,
+
+00:08:12.933 --> 00:08:16.833
+behavior, or visibility without detaching the component.
+
+00:08:16.833 --> 00:08:17.800
+Nested properties
+
+00:08:17.800 --> 00:08:18.600
+become available
+
+00:08:18.600 --> 00:08:21.566
+when a base component is placed inside a larger component,
+
+00:08:21.566 --> 00:08:24.466
+such as a button inside a hero.
+
+00:08:24.466 --> 00:08:27.233
+You can also preview the different theme modes.
+
+00:08:27.233 --> 00:08:30.300
+The design kit also includes a reference page for each component,
+
+00:08:30.700 --> 00:08:33.866
+showing the available variants, properties, and color options.
+
+00:08:34.300 --> 00:08:37.200
+The main component is included for publishing purposes only
+
+00:08:37.200 --> 00:08:38.400
+and should never be edited.
+
+00:08:42.466 --> 00:08:43.900
+All components have default
+
+00:08:43.900 --> 00:08:47.800
+color and font styles applied as defined by the theme modes.
+
+00:08:47.800 --> 00:08:51.166
+Additional options can be applied to an instance using the Properties
+
+00:08:51.166 --> 00:08:52.600
+and Inspector panel.
+
+00:08:52.600 --> 00:08:55.900
+Let's take a look at the color bar card component and see how.
+
+00:08:58.333 --> 00:09:01.200
+The first step is to go to the component reference page.
+
+00:09:01.200 --> 00:09:04.500
+Apply the mode you're working in and review the available options.
+
+00:09:04.900 --> 00:09:08.400
+BrandMab is the default theme mode for this version of the design kit.
+
+00:09:09.066 --> 00:09:12.600
+Here you can see the available options six background colors,
+
+00:09:12.600 --> 00:09:16.600
+six bar colors, and the ability to change the font size and style
+
+00:09:18.666 --> 00:09:20.133
+To apply a different color,
+
+00:09:20.133 --> 00:09:24.033
+select the instance Open Selection colors and choose a new color
+
+00:09:24.033 --> 00:09:27.033
+that corresponds to the color variable you want to change.
+
+00:09:28.433 --> 00:09:30.366
+To change a font size or style,
+
+00:09:30.366 --> 00:09:34.333
+select the text layer and apply the new size and or style.
+
+00:09:34.333 --> 00:09:37.766
+Headline sizes are specific to desktop, tablet, and mobile.
+
+00:09:37.766 --> 00:09:41.366
+While body sizes are shared across all three.
+
+00:09:41.366 --> 00:09:44.266
+To add an effect such as the container drop shadow,
+
+00:09:44.266 --> 00:09:47.966
+select a container instance and choose the effects style.
+
+00:09:47.966 --> 00:09:50.733
+Keep in mind that color options and font customization
+
+00:09:50.733 --> 00:09:54.000
+vary by component, so be sure to check the reference pages before
+
+00:09:54.000 --> 00:09:55.266
+making any changes.
+
+00:09:58.400 --> 00:10:02.100
+Let's take a look at how images work within the design system.
+
+00:10:02.100 --> 00:10:05.566
+Images exist both as base components and as nested components
+
+00:10:05.566 --> 00:10:09.333
+within larger patterns like heros, content blocks and cards.
+
+00:10:10.333 --> 00:10:13.166
+The base component settings default to square corners,
+
+00:10:13.166 --> 00:10:16.800
+image position top center, and captions turned on.
+
+00:10:16.800 --> 00:10:20.166
+Placeholder graphics are included that can be used for wireframing,
+
+00:10:20.166 --> 00:10:22.500
+deleted or left hidden in the instance.
+
+00:10:22.500 --> 00:10:25.500
+For now, let's turn off the caption.
+
+00:10:30.000 --> 00:10:30.600
+Corners,
+
+00:10:30.600 --> 00:10:32.566
+which are defined by the active theme mode
+
+00:10:32.566 --> 00:10:35.200
+can be set to square or radius.
+
+00:10:35.200 --> 00:10:37.466
+Image position defines how the image crops
+
+00:10:37.466 --> 00:10:41.266
+as the viewport gets smaller and components become narrower.
+
+00:10:41.266 --> 00:10:42.700
+Always choose the image position
+
+00:10:42.700 --> 00:10:45.233
+variant before applying the image fill.
+
+00:10:45.233 --> 00:10:47.833
+Image position top center works best for centered
+
+00:10:47.833 --> 00:10:52.200
+focal points, cropping the left and right sides equally.
+
+00:10:52.200 --> 00:10:54.400
+To accurately represent this in your design.
+
+00:10:54.400 --> 00:10:58.500
+Select the image layer, apply an image fill and set it to fill.
+
+00:10:58.500 --> 00:10:59.933
+This automatically positions
+
+00:10:59.933 --> 00:11:04.166
+the image and only needs to be done once in the desktop variant.
+
+00:11:04.166 --> 00:11:06.566
+Image positions top left and top right,
+
+00:11:06.566 --> 00:11:09.666
+Pin the image to one side as the viewport narrows.
+
+00:11:09.666 --> 00:11:12.366
+Cropping only one side of the image
+
+00:11:12.366 --> 00:11:14.533
+to accurately represent this in your design.
+
+00:11:14.533 --> 00:11:18.800
+Select the image layer, apply an image fill, set it to fill,
+
+00:11:18.800 --> 00:11:21.233
+then switch to crop and manually reposition
+
+00:11:21.233 --> 00:11:24.466
+the image by sliding it left or right.
+
+00:11:24.466 --> 00:11:28.166
+This will need to be done for desktop, tablet and mobile.
+
+00:11:28.166 --> 00:11:31.066
+An additional image fill option can be found in components
+
+00:11:31.066 --> 00:11:32.833
+with background image variants.
+
+00:11:32.833 --> 00:11:33.966
+This Gradient Overlay
+
+00:11:33.966 --> 00:11:37.900
+option helps maintain contrast and improves text readability.
+
+00:11:37.900 --> 00:11:41.100
+You can adjust the number of stops, direction, colors, and opacity.
+
+00:11:41.766 --> 00:11:46.366
+Gradient overlays are added by the builder using standard CSS gradients
+
+00:11:46.366 --> 00:11:49.100
+and should not be included in the exported image.
+
+00:11:49.100 --> 00:11:51.533
+Also, for these variants, the image position
+
+00:11:51.533 --> 00:11:54.566
+will need to be manually annotated in the file.
+
+00:11:54.566 --> 00:11:57.800
+Finally, images can be exported directly from Figma
+
+00:11:57.800 --> 00:11:59.966
+or an image editing application.
+
+00:11:59.966 --> 00:12:00.633
+Both methods
+
+00:12:00.633 --> 00:12:03.166
+require specific sizing and cropping approaches
+
+00:12:03.166 --> 00:12:05.900
+depending on the image position you've selected.
+
+00:12:05.900 --> 00:12:09.033
+As a general rule, size your image to match the height
+
+00:12:09.033 --> 00:12:12.300
+and width of the desktop image at 2x resolution.
+
+00:12:12.300 --> 00:12:15.233
+We recommend using the WebP file format.
+
+00:12:15.233 --> 00:12:18.500
+SVG images are recommended for vector graphics.
+
+00:12:18.500 --> 00:12:20.366
+Note that the hero component requires
+
+00:12:20.366 --> 00:12:22.633
+ a mobile specific crop and export.
